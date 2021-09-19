@@ -1,0 +1,61 @@
+.bg-login-image img{
+    width: 450px;
+    position: absolute;
+    bottom: 1px;
+}
+
+.bg-color-dark {
+    background: rgb(46, 46, 45); 
+    
+}
+
+@font-face {
+    font-family: MainTitle;
+    src: url('<?php echo base_url();?>resources/fonts/fonts/Girdens.ttf');
+  }
+
+  .fancy {
+    line-height: 0.5;
+    text-align: center;
+  }
+  .fancy span {
+    display: inline-block;
+    position: relative;  
+  }
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    border-bottom: 2px solid #82ae46;
+    border-top: 2px solid #82ae46;
+    top: 0;
+    width: 300px;
+  }
+  .fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+  .Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.displaydiv{
+    display : flex;
+    z-index: 5;
+    height: 1000px;
+    background-color: #82ae46;
+}
