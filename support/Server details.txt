@@ -1,0 +1,9 @@
+
+======================================
+epiz_29694691
+asfnsf55			KjJCM6mi20TU4z
+
+mysql===============
+db = epiz_29694691_mind_fresh
+user = epiz_29694691
+host = sql201.epizy.com
