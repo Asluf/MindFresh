@@ -18,11 +18,11 @@ foreach ($book as $item) {  ?>
                     <a onclick="addtocart('<?php echo $item['Item_ID']; ?>', '<?php echo $this->session->userdata('Id'); ?>' , '<?php echo $item['Price']; ?>', ' <?php echo $item['Item_Name']; ?> ')" name="<?php echo $item['Item_ID']; ?>" class="add-to-cart d-flex justify-content-center align-items-center text-center">
                         <span><i class="ion-ios-cart"></i></span>
                     </a>
-                    <a id="<?php echo $item['Item_ID']; ?>" style="display: block;" href="https://api.whatsapp.com/send?phone=+94750785247&text=I want to purchase <?php echo $item['Item_Name']; ?>" name=" <?php echo $item['Item_ID']; ?>" class="heart d-flex justify-content-center align-items-center ">
+                    <a id="<?php echo $item['Item_ID']; ?>" style="display: block;" href="https://api.whatsapp.com/send?phone=+94767520348&text=I want to purchase <?php echo $item['Item_Name']; ?>" name=" <?php echo $item['Item_ID']; ?>" class="heart d-flex justify-content-center align-items-center ">
                         <span class="icon-whatsapp">
                     </a>
                 <?php } else { ?>
-                    <a id="<?php echo $item['Item_ID']; ?>" style="display: block;" href="https://api.whatsapp.com/send?phone=+94750785247&text=I want to purchase <?php echo $item['Item_Name']; ?>" name=" <?php echo $item['Item_ID']; ?>" class="heart d-flex justify-content-center align-items-center ">
+                    <a id="<?php echo $item['Item_ID']; ?>" style="display: block;" href="https://api.whatsapp.com/send?phone=+94767520348&text=I want to purchase <?php echo $item['Item_Name']; ?>" name=" <?php echo $item['Item_ID']; ?>" class="heart d-flex justify-content-center align-items-center ">
                         <span class="icon-whatsapp text-center btn btn-success">
                     </a>
                 <?php } ?>
@@ -51,7 +51,7 @@ foreach ($book as $item) {  ?>
 
                     </div>
                     <div class="modal-footer">
-                        <a id="<?php echo $item['Item_ID']; ?>" style="display: block;" href="https://api.whatsapp.com/send?phone=+94750785247&text=I want to purchase <?php echo $item['Item_Name']; ?>" name=" <?php echo $item['Item_ID']; ?>" class="btn btn-success btn-lg heart d-flex justify-content-center align-items-center ">
+                        <a id="<?php echo $item['Item_ID']; ?>" style="display: block;" href="https://api.whatsapp.com/send?phone=+94767520348&text=I want to purchase <?php echo $item['Item_Name']; ?>" name=" <?php echo $item['Item_ID']; ?>" class="btn btn-success btn-lg heart d-flex justify-content-center align-items-center ">
                             <span class="icon-whatsapp">
                         </a>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
