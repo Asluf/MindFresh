@@ -23,7 +23,8 @@ class Admin extends CI_Controller
 			$data['book9'] = $this->customer_model->book9();
 			$data['book10'] = $this->customer_model->book10();
 			$data['book11'] = $this->customer_model->book11();
-			$data['textile'] = $this->customer_model->gettextile();
+			$data['mobile'] = $this->customer_model->getmobile();
+			// $data['textile'] = $this->customer_model->gettextile();
 			$this->load->view('admin/adminindex', $data);
 		} else {
 			redirect(base_url() . 'index.php/Login');
@@ -81,7 +82,8 @@ class Admin extends CI_Controller
 			}
 			$this->load->model('customer_model');
 			$data['book'] = $this->customer_model->getbook();
-			$data['textile'] = $this->customer_model->gettextile();
+			// $data['textile'] = $this->customer_model->gettextile();
+			$data['mobile'] = $this->customer_model->getmobile();
 			$this->load->view('admin/operate/main', $data);
 		} else {
 			redirect(base_url() . 'index.php/Login');
@@ -107,6 +109,18 @@ class Admin extends CI_Controller
 			}
 			$this->load->model('admin_model');
 			$res = $this->admin_model->removetextile($id);
+		} else {
+			redirect(base_url() . 'index.php/Login');
+		}
+	}
+	public function removemobile($id)
+	{
+		if ($this->session->userdata('Role') == 'admin') {
+			if (time() - $this->session->userdata('login_time') > 600) {
+				redirect(base_url() . 'index.php/Logout');
+			}
+			$this->load->model('admin_model');
+			$res = $this->admin_model->removemobile($id);
 		} else {
 			redirect(base_url() . 'index.php/Login');
 		}

@@ -50,6 +50,14 @@ class admin_model extends CI_MODEL
         $this->db->where('Item_ID', $id);
         return $this->db->update('admin_textile', $itemdata);
     }
+    public function removemobile($id)
+    {
+        $itemdata = [
+            'Item_Status' => 'Out_Of_Stock'
+        ];
+        $this->db->where('Item_ID', $id);
+        return $this->db->update('admin_mobile', $itemdata);
+    }
 
 
 
