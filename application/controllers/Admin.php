@@ -11,7 +11,7 @@ class Admin extends CI_Controller
 				redirect(base_url() . 'index.php/Logout');
 			}
 			$this->load->model('customer_model');
-			$data['book'] = $this->customer_model->getbook();
+			// $data['book'] = $this->customer_model->getbook();
 			$data['book1'] = $this->customer_model->book1();
 			$data['book2'] = $this->customer_model->book2();
 			$data['book3'] = $this->customer_model->book3();
