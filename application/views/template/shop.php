@@ -4,63 +4,60 @@
 <head>
 	<?php $this->load->view('template/head'); ?>
 	<style>
-        .BgImage {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+		.BgImage {
+			display: block;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
 
-            background-size: 640 426;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border-radius: 5px;
-        }
+			background-size: 640 426;
+			background-repeat: no-repeat;
+			background-position: center center;
+			border-radius: 5px;
+		}
 
-        @media (max-width: 768px) {
-            .carousel-inner .carousel-item>div {
-                display: none;
-            }
+		@media (max-width: 768px) {
+			.carousel-inner .carousel-item>div {
+				display: none;
+			}
 
-            .carousel-inner .carousel-item>div:first-child {
-                display: block;
-            }
-        }
+			.carousel-inner .carousel-item>div:first-child {
+				display: block;
+			}
+		}
 
-        .carousel-inner .carousel-item.active,
-        .carousel-inner .carousel-item-next,
-        .carousel-inner .carousel-item-prev {
-            display: flex;
-        }
+		.carousel-inner .carousel-item.active,
+		.carousel-inner .carousel-item-next,
+		.carousel-inner .carousel-item-prev {
+			display: flex;
+		}
 
-        /* display 3 */
-        @media (min-width: 768px) {
+		/* display 3 */
+		@media (min-width: 768px) {
 
-            .carousel-inner .carousel-item-right.active,
-            .carousel-inner .carousel-item-next {
-                transform: translateX(33.333%);
-            }
+			.carousel-inner .carousel-item-right.active,
+			.carousel-inner .carousel-item-next {
+				transform: translateX(33.333%);
+			}
 
-            .carousel-inner .carousel-item-left.active,
-            .carousel-inner .carousel-item-prev {
-                transform: translateX(-33.333%);
-            }
-        }
+			.carousel-inner .carousel-item-left.active,
+			.carousel-inner .carousel-item-prev {
+				transform: translateX(-33.333%);
+			}
+		}
 
-        .carousel-inner .carousel-item-right,
-        .carousel-inner .carousel-item-left {
-            transform: translateX(0);
-        }
+		.carousel-inner .carousel-item-right,
+		.carousel-inner .carousel-item-left {
+			transform: translateX(0);
+		}
 
-        #invest {
+		#invest {
 
-            height: 550px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        
-    
-    </style>
+			height: 550px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
 
 	<style>
 		.product-category li a.active {
@@ -115,9 +112,9 @@
 					<li class="text-dark nav-item active" style="font-size: 13px; width:70px;">
 						<a class="active" onfocus="bkk()" id="Gd1-tab" data-toggle="tab" href="#Gd1" role="tab" aria-controls="Book" aria-selected="true">Books</a>
 					</li>
-					<li class="text-dark nav-item " style="font-size: 13px; width:70px">
+					<!-- <li class="text-dark nav-item " style="font-size: 13px; width:70px">
 						<a id="Mobile-tab" onfocus="bk()" data-toggle="tab" href="#Mobile" role="tab" aria-controls="Mobile" aria-selected="false">Mobile</a>
-					</li>
+					</li> -->
 					<!-- <li class="text-dark nav-item " style="font-size: 13px; width:70px">
 						<a id="Textile-tab" onfocus="bk()" data-toggle="tab" href="#Textile" role="tab" aria-controls="Textile" aria-selected="false">Textile</a>
 					</li> -->
@@ -128,7 +125,12 @@
 						<a class="" id="Food-tab" onfocus="bk()" data-toggle="tab" href="#Grocery" role="tab" aria-controls="Food" aria-selected="false">Food</a>
 					</li> -->
 					<li class="text-dark nav-item" style="font-size: 13px; width:50px; ">
-						<a id="Electronic-tab" onfocus="bk()" style="text-align:left;" data-toggle="tab" href="#Grocery" role="tab" aria-controls="Electronic" aria-selected="false">Electronics</a>
+						<a id="Electronic-tab" onfocus="bk()" style="text-align:left;" data-toggle="tab" href="#Electronic" role="tab" aria-controls="Electronic" aria-selected="false">Electronics</a>
+					</li>
+					<li class="text-dark nav-item ml-5" style="font-size: 13px; width:70px">
+						<div>
+							<a class="ml-5 btn-sm text-light" style="background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);" id="Mobile-tab" onfocus="bk()"  href="<?php echo base_url(); ?>index.php/Mobile_" >Mobile</a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -182,7 +184,7 @@
 
 				<!-- <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/book');  ?>
+						<?php //$this->load->view('template/card/book');  ?>
 					</div>
 				</div> -->
 				<div class="tab-pane fade show active" id="Gd1" role="tabpanel" aria-labelledby="Gd1-tab">
@@ -242,31 +244,32 @@
 				</div>
 
 				<!-- ////////////////////////////////////// -->
-				<div class="tab-pane fade" id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab">
-					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/mobile');  ?>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="Textile" role="tabpanel" aria-labelledby="Textile-tab">
-					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/textile');  ?>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="Grocery" role="tabpanel" aria-labelledby="Grocery-tab">
-					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/grocery');  ?>
-					</div>
-				</div>
-				<!-- <div class="tab-pane fade" id="Food" role="tabpanel" aria-labelledby="Food-tab">
-					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/food');  ?>
-					</div>
-				</div> -->
 				<div class="tab-pane fade" id="Electronic" role="tabpanel" aria-labelledby="Electronic-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
 						<?php $this->load->view('template/card/electronic');  ?>
 					</div>
 				</div>
+				<!-- <div class="tab-pane fade" id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab">
+					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
+						<?php //$this->load->view('template/card/mobile');  ?>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="Textile" role="tabpanel" aria-labelledby="Textile-tab">
+					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
+						<?php //$this->load->view('template/card/textile');  ?>
+					</div>
+				</div> -->
+				<!-- <div class="tab-pane fade" id="Grocery" role="tabpanel" aria-labelledby="Grocery-tab">
+					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
+						<?php //$this->load->view('template/card/grocery');  ?>
+					</div>
+				</div> -->
+				<!-- <div class="tab-pane fade" id="Food" role="tabpanel" aria-labelledby="Food-tab">
+					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
+						<?php //$this->load->view('template/card/food');  ?>
+					</div>
+				</div> -->
+				
 			</div>
 
 

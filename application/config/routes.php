@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['Home'] = 'Homepage/index';
+$route['Mobile_'] = 'Homepage/mobile';
 $route['About'] = 'Homepage/about';
 $route['Contact'] = 'Homepage/contact';
 $route['Login'] = 'Homepage/login';

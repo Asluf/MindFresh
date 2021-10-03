@@ -20,16 +20,20 @@ class Homepage extends CI_Controller
 		$data['book9'] = $this->customer_model->book9();
 		$data['book10'] = $this->customer_model->book10();
 		$data['book11'] = $this->customer_model->book11();
-		$data['mobile'] = $this->customer_model->getmobile();
+		
 		// $data['textile'] = $this->customer_model->gettextile();
 		$this->load->view('template/shop', $data);
+	}
+	public function mobile()
+	{
+		$this->load->model('customer_model');
+		$data['mobile'] = $this->customer_model->getmobile();
+		$this->load->view('template/mobile',$data);
 	}
 
 	public function about()
 	{
-		
 		$this->load->view('template/about');
-		
 	}
 
 	public function contact()

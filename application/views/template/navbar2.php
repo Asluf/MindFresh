@@ -4,7 +4,7 @@
         <div class="col-md-11" style="width: 99%;">
             <a class="navbar-brand" href="<?php echo base_url(); ?>index.php/Home">
                 <img src="<?php echo base_url(); ?>resources/ICons/logo1_3.png" style="border-radius:15px;width:30px; margin-right:10px;" />
-                <span style="font-family:'Courier New', Courier, monospace;">MIND FRESH</span>
+                <span style="font-family:'Courier New', Courier, monospace;">Mobile Mart</span>
             </a>
 
         </div>
@@ -16,11 +16,8 @@
 
     <div id="abc" class="navbar-nav" style="display: none;">
         <div class="d-flex">
-            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Home">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Mobile_">Mobile</a>
-            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/About">About</a>
-            <a class="nav-item nav-link  mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Contact">Contact</a>
-            <!-- <a class="nav-item nav-link font-weight-bold" href="<?php echo base_url(); ?>index.php/Login">Login</a> -->
+            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Home">Books<span class="sr-only">(current)</span></a>
+            
 
         </div>
 
