@@ -30,7 +30,10 @@ class Homepage extends CI_Controller
 		$data['mobile'] = $this->customer_model->getmobile();
 		$this->load->view('template/mobile',$data);
 	}
-
+	public function about_()
+	{
+		$this->load->view('template/about2');
+	}
 	public function about()
 	{
 		$this->load->view('template/about');
