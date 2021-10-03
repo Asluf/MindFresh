@@ -1,5 +1,4 @@
 <?php
-// var_dump($book);
 foreach ($mobile as $item) {  ?>
 
     <div class="col-xs-6 product col-md-6  col-lg-3 " style="width: 49%;">
@@ -43,7 +42,7 @@ foreach ($mobile as $item) {  ?>
                     </div>
                     <div class="modal-body">
                         <!-- <img style="width: 250px;" src="<?php echo base_url(); ?>resources/mobile_pics/<?php echo $item['Item_Image_1']; ?>" alt="Contact with Asluf"><br /> -->
-                        <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                        <div id="recipeCarousel<?php echo $item['Item_ID']; ?>" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <div class="col-md-4">
@@ -94,18 +93,24 @@ foreach ($mobile as $item) {  ?>
 
                             </div>
 
-                            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                            <a class="carousel-control-prev w-auto" href="#recipeCarousel<?php echo $item['Item_ID'];?>" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                            <a class="carousel-control-next w-auto" href="#recipeCarousel<?php echo $item['Item_ID'];?>" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                        🔸<strike> Price : <?php echo "Rs." . $item['Price']; ?></strike> <br />
-                        🔸Net Price : <?php echo "Rs." . $item['Net_Price']; ?> only <br />
-                        🔸More Details : <?php echo $item['BMore']; ?>
+                        <div class="text-dark">
+                            🔸<strike> Price : <?php echo "Rs." . $item['Price']; ?></strike> <br />
+                            🔸Net Price : <?php echo "Rs." . $item['Net_Price']; ?> only <br />
+                            🔸Uploaded time : <?php $str1 =  $item['Time'];
+                                                $pieces = explode(" ", $str1);
+                                                echo $pieces[0]; ?> <br />
+                            🔸More Details : <?php echo $item['BMore']; ?>
+                        </div>
+
 
                     </div>
                     <div class="modal-footer">
@@ -127,7 +132,10 @@ foreach ($mobile as $item) {  ?>
 
 <!-- ============================ -->
 <script>
-    $('#recipeCarousel').carousel({
+    // $('#recipeCarousel').carousel({
+    //     interval: 5000
+    // });
+    $('[id^=recipeCarousel]').carousel({
         interval: 5000
     });
 

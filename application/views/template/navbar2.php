@@ -12,13 +12,13 @@
             <span id="btn-abc" class="navbar-toggler-icon "></span>
         </div>
     </div>
-    
+
 
     <div id="abc" class="navbar-nav" style="display: none;">
         <div class="d-flex">
-            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Home">Books<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Mobile_">Mobile<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Home">Books</a>
             <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/About_">About</a>
-
         </div>
 
     </div>
