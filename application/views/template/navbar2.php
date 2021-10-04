@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark contanier-fluid" style="background-image: linear-gradient(135deg, #C33764 10%, #1D2671 100%);">
+<nav class="navbar navbar-dark contanier-fluid sticky-top" style="background-image: linear-gradient(135deg, #C33764 10%, #1D2671 100%);">
 
     <div class="d-flex">
         <div class="col-md-11" style="width: 99%;">

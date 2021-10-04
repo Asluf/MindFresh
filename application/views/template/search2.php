@@ -3,10 +3,9 @@
 
 <head>
     <?php $this->load->view('template/head');   ?>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <style>
-        
-
         .form-control-borderless {
             border: none;
         }
@@ -103,11 +102,14 @@
     <?php
     $this->load->view('template/navbar2');
     ?>
-    <form name="search_form" id="search_form" style="padding-bottom: 0; padding-top:0;">
+
+    <span class="pl-2 mb-0 pb-0"><a href="#" onclick="back()" class="text-dark"> <i class="fas fa-chevron-circle-left h4 text-body pl-1 mt-2"></i></a></span>
+
+    <form onsubmit="return false" name="search_form" id="search_form" style="padding-bottom: 0; padding-top:0;">
         <div class="card-body row no-gutters align-items-center d-flex p-2 pt-2">
 
             <div>
-                <input class="form-control-sm" name="searchbox" id="searchbox" style="width: 210px;border-bottom:3px solid orangered;" type="search" placeholder="Search Here">
+                <input class="form-control-sm" name="searchbox" id="searchbox" style="width: 210px;border-bottom:3px solid orangered;" type="search" value="<?php echo $temp; ?>" placeholder="Search Here">
             </div>
             <div>
                 <a href="#" onclick="gg()"> <i class="fas fa-search h4 text-body pl-1"></i> </a>
@@ -117,7 +119,7 @@
         </div>
     </form>
 
-    <div class="py-2 wrap-about pb-md-5 ftco-animate" style="text-align:center;">
+    <div class="py-0 wrap-about pb-md-5 ftco-animate" style="text-align:center;">
         <div class="heading-section-bold mb-4 mt-md-5">
             <div class="ml-md-0">
                 <div class="ml-md-0">
@@ -131,7 +133,7 @@
     ?>
 
     <?php if ($searchmobile == "No Results") {
-        echo "Not Found.......";
+        echo "<center>No Results found.......</center>";
     } else {
         foreach ($searchmobile as $item) {  ?>
 
@@ -142,7 +144,7 @@
                     </a>
 
                     <div class="text py-3 pb-4 px-3 text-center" style="width:150px;font-size:10px;">
-                        <a class="text-dark" style="font-size:12px;" href="#"><?php echo $item['Brand_Name']; ?></a>
+                        <a class="text-dark" style="font-size:12px;" href="#"><?php echo $item['Brand_Name'] . '-' . $item['Model_Name']; ?></a>
                         <div>
                             <strike><span class="price-sale text-dark">Rs.<?php echo $item['Price']; ?></span></strike></br>
                             <span class="text-dark" style="font-size:12px;">Rs.<?php echo $item['Net_Price']; ?></span>
@@ -169,7 +171,7 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $item['Brand_Name']; ?></h5>
+                                <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $item['Brand_Name'] . '-' . $item['Model_Name']; ?></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -239,7 +241,7 @@
                                 <div class="text-dark">
                                     🔸<strike> Price : <?php echo "Rs." . $item['Price']; ?></strike> <br />
                                     🔸Net Price : <?php echo "Rs." . $item['Net_Price']; ?> only <br />
-                                    🔸Uploaded time : <?php $str1 =  $item['Time'];
+                                    🔸Uploaded date : <?php $str1 =  $item['Time'];
                                                         $pieces = explode(" ", $str1);
                                                         echo $pieces[0]; ?> <br />
                                     🔸More Details : <?php echo $item['BMore']; ?>
@@ -269,7 +271,7 @@
 
 
 
-
+    <br /><br />
     <?php $this->load->view('template/footerfont2');  ?>
     <?php $this->load->view('template/footer'); ?>
     <script>
@@ -280,6 +282,12 @@
             // $.ajax({
             // 	url: "<?php echo base_url(); ?>index.php/Search/"
             // })
+        }
+
+        function back() {
+
+            window.location = "<?php echo base_url(); ?>" + "index.php/Mobile_";
+
         }
         // $('#recipeCarousel').carousel({
         //     interval: 5000
@@ -303,6 +311,13 @@
                 }
 
                 next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+
+        $(document).on('keypress', function(e) {
+            if (e.which == 13) {
+                gg();
+
             }
         });
     </script>

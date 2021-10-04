@@ -8,7 +8,7 @@ foreach ($mobile as $item) {  ?>
             </a>
 
             <div class="text py-3 pb-4 px-3 text-center" style="width:150px;font-size:10px;">
-                <a class="text-dark" style="font-size:12px;" href="#"><?php echo $item['Brand_Name']; ?></a>
+                <a class="text-dark" style="font-size:12px;" href="#"><?php echo $item['Brand_Name'] . '-' . $item['Model_Name']; ?></a>
                 <div>
                     <strike><span class="price-sale text-dark">Rs.<?php echo $item['Price']; ?></span></strike></br>
                     <span class="text-dark" style="font-size:12px;">Rs.<?php echo $item['Net_Price']; ?></span>
@@ -93,11 +93,11 @@ foreach ($mobile as $item) {  ?>
 
                             </div>
 
-                            <a class="carousel-control-prev w-auto" href="#recipeCarousel<?php echo $item['Item_ID'];?>" role="button" data-slide="prev">
+                            <a class="carousel-control-prev w-auto" href="#recipeCarousel<?php echo $item['Item_ID']; ?>" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next w-auto" href="#recipeCarousel<?php echo $item['Item_ID'];?>" role="button" data-slide="next">
+                            <a class="carousel-control-next w-auto" href="#recipeCarousel<?php echo $item['Item_ID']; ?>" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -105,7 +105,7 @@ foreach ($mobile as $item) {  ?>
                         <div class="text-dark">
                             🔸<strike> Price : <?php echo "Rs." . $item['Price']; ?></strike> <br />
                             🔸Net Price : <?php echo "Rs." . $item['Net_Price']; ?> only <br />
-                            🔸Uploaded time : <?php $str1 =  $item['Time'];
+                            🔸Uploaded date : <?php $str1 =  $item['Time'];
                                                 $pieces = explode(" ", $str1);
                                                 echo $pieces[0]; ?> <br />
                             🔸More Details : <?php echo $item['BMore']; ?>
@@ -156,4 +156,5 @@ foreach ($mobile as $item) {  ?>
             next.children(':first-child').clone().appendTo($(this));
         }
     });
+    
 </script>

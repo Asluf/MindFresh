@@ -113,7 +113,7 @@
 	<?php
 	$this->load->view('template/navbar2');
 	?>
-	<form name="search_form" id="search_form" style="padding-bottom: 0; padding-top:0;">
+	<form onsubmit="return false" name="search_form" id="search_form" style="padding-bottom: 0; padding-top:0;">
 		<div class="card-body row no-gutters align-items-center d-flex p-2 pt-2">
 
 			<div>
@@ -128,7 +128,7 @@
 	</form>
 
 
-	<div class="py-2 wrap-about pb-md-5 ftco-animate" style="text-align:center;">
+	<div class="py-0 wrap-about pb-md-5 ftco-animate" style="text-align:center;">
 		<div class="heading-section-bold mb-4 mt-md-5">
 			<div class="ml-md-0">
 				<div class="ml-md-0">
@@ -163,6 +163,12 @@
 			// 	url: "<?php echo base_url(); ?>index.php/Search/"
 			// })
 		}
+		$(document).on('keypress', function(e) {
+            if (e.which == 13) {
+                gg();
+
+            }
+        });
 	</script>
 
 </body>

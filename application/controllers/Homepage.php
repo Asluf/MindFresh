@@ -37,6 +37,7 @@ class Homepage extends CI_Controller
 	public function search_($id)
 	{
 		$this->load->model('customer_model');
+		$data['temp'] = $id;
 		$data['searchmobile'] = $this->customer_model->getsearch($id);
 
 		$this->load->view('template/search2',$data);
