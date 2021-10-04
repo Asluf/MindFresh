@@ -6,7 +6,7 @@ foreach ($book6 as $item) {  ?>
     <div class="col-xs-6 product col-md-6  col-lg-3 " style="width: 49%;">
         <div class="">
             <a class="img-prod" data-toggle="modal" data-target="#book6<?php echo $item['Item_ID']; ?>">
-                <img style="width: 150px; height:200px" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Colorlib Template">
+                <img style="width: 150px; height:200px" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Contact Asluf for more details">
             </a>
 
             <div class="text py-3 pb-4 px-3 text-center" style="width:150px;font-size:10px;">
@@ -42,7 +42,7 @@ foreach ($book6 as $item) {  ?>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img style="width: 250px;" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Colorlib Template"><br />
+                        <img style="width: 250px;" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Contact Asluf for more details"><br />
                         🔸Price : <?php echo $item['Price']; ?> <br />
                         🔸Pages : <?php echo $item['BPages']; ?><br />
                         🔸ISBN : <?php echo $item['ISBN']; ?><br />

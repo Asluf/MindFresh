@@ -127,11 +127,7 @@
 					<li class="text-dark nav-item" style="font-size: 13px; width:50px; ">
 						<a id="Electronic-tab" onfocus="bk()" style="text-align:left;" data-toggle="tab" href="#Electronic" role="tab" aria-controls="Electronic" aria-selected="false">Electronics</a>
 					</li>
-					<li class="text-dark nav-item ml-5" style="font-size: 13px; width:70px">
-						<div>
-							<a class="ml-5 btn-sm text-light" style="background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);" id="Mobile-tab" onfocus="bk()"  href="<?php echo base_url(); ?>index.php/Mobile_" >Mobile</a>
-						</div>
-					</li>
+					
 				</ul>
 			</div>
 			<section id="grade-div" style="display: block;">
@@ -249,11 +245,7 @@
 						<?php $this->load->view('template/card/electronic');  ?>
 					</div>
 				</div>
-				<!-- <div class="tab-pane fade" id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab">
-					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php //$this->load->view('template/card/mobile');  ?>
-					</div>
-				</div>
+				
 				<div class="tab-pane fade" id="Textile" role="tabpanel" aria-labelledby="Textile-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
 						<?php //$this->load->view('template/card/textile');  ?>

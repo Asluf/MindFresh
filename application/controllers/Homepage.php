@@ -24,24 +24,7 @@ class Homepage extends CI_Controller
 		// $data['textile'] = $this->customer_model->gettextile();
 		$this->load->view('template/shop', $data);
 	}
-	public function mobile()
-	{
-		$this->load->model('customer_model');
-		$data['mobile'] = $this->customer_model->getmobile();
-		$this->load->view('template/mobile',$data);
-	}
-	public function about_()
-	{
-		$this->load->view('template/about2');
-	}
-	public function search_($id)
-	{
-		$this->load->model('customer_model');
-		$data['temp'] = $id;
-		$data['searchmobile'] = $this->customer_model->getsearch($id);
-
-		$this->load->view('template/search2',$data);
-	}
+	
 	public function about()
 	{
 		$this->load->view('template/about');

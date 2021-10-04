@@ -17,7 +17,6 @@
     <div id="abc" class="navbar-nav" style="display: none;">
         <div class="d-flex">
             <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Home">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Mobile_">Mobile</a>
             <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/About">About</a>
             <a class="nav-item nav-link  mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Contact">Contact</a>
             <!-- <a class="nav-item nav-link font-weight-bold" href="<?php echo base_url(); ?>index.php/Login">Login</a> -->

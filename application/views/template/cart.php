@@ -48,7 +48,7 @@
 
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="<?php echo base_url(); ?>resources/images/<?php echo $item['Item_Image_Path']; ?>" alt="Colorlib Template">
+							<a href="#" class="img-prod"><img class="img-fluid" src="<?php echo base_url(); ?>resources/images/<?php echo $item['Item_Image_Path']; ?>" alt="Contact Asluf for more details">
 
 								<div class="overlay"></div>
 							</a>
