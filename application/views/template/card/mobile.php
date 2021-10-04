@@ -53,16 +53,16 @@ foreach ($mobile as $item) {  ?>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="carousel-item">
                                     <div class="col-md-4">
                                         <div class="card text-center text-dark pt-0 pb-0" style="background-image: linear-gradient(135deg, #f5f7fa 10%, #c3cfe2 100%);">
                                             <div class="card-body">
-                                                <img class="img text-center" style="height: 160px;" src="<?php echo base_url(); ?>resources/mobile_pics/<?php echo $item['Item_Image_2']; ?> ?>">
+                                                <img class="img text-center" style="height: 160px;" src="<?php echo base_url(); ?>resources/mobile_pics/<?php echo $item['Item_Image_2']; ?>">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="carousel-item">
                                     <div class="col-md-4">
                                         <div class="card text-center text-dark pt-0 pb-0" style="background-image: linear-gradient(135deg, #f5f7fa 10%, #c3cfe2 100%);">
@@ -90,6 +90,8 @@ foreach ($mobile as $item) {  ?>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                
 
                             </div>
 
@@ -136,11 +138,11 @@ foreach ($mobile as $item) {  ?>
     //     interval: 5000
     // });
     $('[id^=recipeCarousel]').carousel({
-        interval: 5000
+        interval: 3000
     });
 
     $('.carousel .carousel-item').each(function() {
-        var minPerSlide = 3;
+        var minPerSlide = 5;
         var next = $(this).next();
         if (!next.length) {
             next = $(this).siblings(':first');

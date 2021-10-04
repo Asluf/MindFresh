@@ -194,7 +194,7 @@
                                             <div class="col-md-4">
                                                 <div class="card text-center text-dark pt-0 pb-0" style="background-image: linear-gradient(135deg, #f5f7fa 10%, #c3cfe2 100%);">
                                                     <div class="card-body">
-                                                        <img class="img text-center" style="height: 160px;" src="<?php echo base_url(); ?>resources/mobile_pics/<?php echo $item['Item_Image_2']; ?> ?>">
+                                                        <img class="img text-center" style="height: 160px;" src="<?php echo base_url(); ?>resources/mobile_pics/<?php echo $item['Item_Image_2']; ?>">
                                                     </div>
                                                 </div>
                                             </div>
