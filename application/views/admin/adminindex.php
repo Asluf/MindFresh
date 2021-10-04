@@ -106,6 +106,7 @@
 			</div>
 		</div>
 	</div>
+	<br><br>
 
 	<div class="container mb-4">
 
@@ -115,9 +116,12 @@
 					<li class="text-dark nav-item active" style="font-size: 13px; width:70px;">
 						<a class="active" onfocus="bkk()" id="Gd1-tab" data-toggle="tab" href="#Gd1" role="tab" aria-controls="Book" aria-selected="true">Books</a>
 					</li>
-					<li class="text-dark nav-item " style="font-size: 13px; width:70px">
-						<a id="Mobile-tab" onfocus="bk()" data-toggle="tab" href="#Mobile" role="tab" aria-controls="Mobile" aria-selected="false">Mobile</a>
+					<li class="text-dark nav-item" style="font-size: 13px; width:50px; ">
+						<a id="Electronic-tab" onfocus="bk()" style="text-align:left;" data-toggle="tab" href="#Electronic" role="tab" aria-controls="Electronic" aria-selected="false">Electronics</a>
 					</li>
+					<!-- <li class="text-dark nav-item " style="font-size: 13px; width:70px">
+						<a id="Mobile-tab" onfocus="bk()" data-toggle="tab" href="#Mobile" role="tab" aria-controls="Mobile" aria-selected="false">Mobile</a>
+					</li> -->
 					<!-- <li class="text-dark nav-item " style="font-size: 13px; width:70px">
 						<a id="Textile-tab" onfocus="bk()" data-toggle="tab" href="#Textile" role="tab" aria-controls="Textile" aria-selected="false">Textile</a>
 					</li> -->
@@ -127,9 +131,7 @@
 					<!-- <li class="text-dark nav-item" style="font-size: 13px; width:60px;">
 						<a class="" id="Food-tab" onfocus="bk()" data-toggle="tab" href="#Grocery" role="tab" aria-controls="Food" aria-selected="false">Food</a>
 					</li> -->
-					<li class="text-dark nav-item" style="font-size: 13px; width:50px; ">
-						<a id="Electronic-tab" onfocus="bk()" style="text-align:left;" data-toggle="tab" href="#Grocery" role="tab" aria-controls="Electronic" aria-selected="false">Electronics</a>
-					</li>
+					
 				</ul>
 			</div>
 			<section id="grade-div" style="display: block;">
@@ -182,7 +184,7 @@
 
 				<!-- <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/book');  ?>
+						<?php //$this->load->view('template/card/book');  ?>
 					</div>
 				</div> -->
 				<div class="tab-pane fade show active" id="Gd1" role="tabpanel" aria-labelledby="Gd1-tab">
@@ -242,24 +244,24 @@
 				</div>
 
 				<!-- ////////////////////////////////////// -->
-				<div class="tab-pane fade" id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab">
+				<!-- <div class="tab-pane fade" id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/mobile');  ?>
+						<?php //$this->load->view('template/card/mobile');  ?>
 					</div>
-				</div>
+				</div> -->
 				<div class="tab-pane fade" id="Textile" role="tabpanel" aria-labelledby="Textile-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
 						<?php $this->load->view('template/card/textile');  ?>
 					</div>
 				</div>
-				<div class="tab-pane fade" id="Grocery" role="tabpanel" aria-labelledby="Grocery-tab">
+				<!-- <div class="tab-pane fade" id="Grocery" role="tabpanel" aria-labelledby="Grocery-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/grocery');  ?>
+						<?php //$this->load->view('template/card/grocery');  ?>
 					</div>
-				</div>
+				</div> -->
 				<!-- <div class="tab-pane fade" id="Food" role="tabpanel" aria-labelledby="Food-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/food');  ?>
+						<?php //$this->load->view('template/card/food');  ?>
 					</div>
 				</div> -->
 				<div class="tab-pane fade" id="Electronic" role="tabpanel" aria-labelledby="Electronic-tab">

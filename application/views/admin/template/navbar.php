@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark" style="background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);">
+<nav class="navbar navbar-dark fixed-top" style="background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);">
 
     <div class="d-flex">
         <div class="col-md-11" style="width: 99%;">
@@ -16,11 +16,10 @@
 
     <div id="abc" class="navbar-nav" style="display: none;">
         <div class="d-flex">
-            <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Home_a838fgt">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link mr-3  font-weight-bold" href="<?php echo base_url(); ?>index.php/Home_a838fgt">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link mr-3 font-weight-bold" href="<?php echo base_url(); ?>index.php/Add_a838fggdgfdt">Add+</a>
             <a class="nav-item nav-link mr-2 font-weight-bold" href="<?php echo base_url(); ?>index.php/Manage_a838fgtdrggdgfdt">Manage</a>
             <a class="nav-item nav-link mr-2 font-weight-bold" href="<?php echo base_url(); ?>index.php/About_atgfdg838fgt">About</a>
-            <a class="nav-item nav-link  mr-2 font-weight-bold" href="<?php echo base_url(); ?>index.php/Contact_axdgftr838fgt">Contact</a>
             <a class="nav-item nav-link font-weight-bold" data-toggle="modal" data-target="#logoutModal" href="#">
                 <i class="icon-power-off ml-1 mt-1 text-gray-400"></i>
             </a>

@@ -57,10 +57,6 @@
 				<li class="text-dark nav-item " style="font-size: 15px; width:80px">
 					<a id="Textile-tab" data-toggle="tab" href="#Textile" role="tab" aria-controls="Textile" aria-selected="false">Textile</a>
 				</li>
-
-				<li class="text-dark nav-item " style="font-size: 15px; width:80px">
-					<a id="Mobile-tab" data-toggle="tab" href="#Mobile" role="tab" aria-controls="Mobile" aria-selected="false">Mobile</a>
-				</li>
 			</ul>
 		</div>
 
@@ -77,11 +73,7 @@
 					<?php $this->load->view('admin/form/textile');  ?>
 				</div>
 			</div>
-			<div class="tab-pane fade" id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab">
-				<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-					<?php $this->load->view('admin/form/mobile');  ?>
-				</div>
-			</div>
+			
 		</div>
 
 
