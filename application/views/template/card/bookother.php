@@ -2,7 +2,7 @@
 <?php
 // var_dump($book);
 foreach ($book as $item) {
-    if($item['Grade'] == '11'){  ?>
+    if($item['Grade'] == 'Other'){  ?>
 
     <div class="col-xs-6 product col-md-6  col-lg-3 " style="width: 49%;">
         <div class="">
