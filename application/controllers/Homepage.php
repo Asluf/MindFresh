@@ -8,20 +8,7 @@ class Homepage extends CI_Controller
 	{
 
 		$this->load->model('customer_model');
-		// $data['book'] = $this->customer_model->getbook();
-		$data['book1'] = $this->customer_model->book1();
-		$data['book2'] = $this->customer_model->book2();
-		$data['book3'] = $this->customer_model->book3();
-		$data['book4'] = $this->customer_model->book4();
-		$data['book5'] = $this->customer_model->book5();
-		$data['book6'] = $this->customer_model->book6();
-		$data['book7'] = $this->customer_model->book7();
-		$data['book8'] = $this->customer_model->book8();
-		$data['book9'] = $this->customer_model->book9();
-		$data['book10'] = $this->customer_model->book10();
-		$data['book11'] = $this->customer_model->book11();
-		
-		// $data['textile'] = $this->customer_model->gettextile();
+		$data['book'] = $this->customer_model->getbook();		
 		$this->load->view('template/shop', $data);
 	}
 	

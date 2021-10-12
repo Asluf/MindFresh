@@ -124,18 +124,20 @@
 					<!-- <li class="text-dark nav-item" style="font-size: 13px; width:60px;">
 						<a class="" id="Food-tab" onfocus="bk()" data-toggle="tab" href="#Grocery" role="tab" aria-controls="Food" aria-selected="false">Food</a>
 					</li> -->
-					<li class="text-dark nav-item" style="font-size: 13px; width:50px; ">
+					<!-- <li class="text-dark nav-item" style="font-size: 13px; width:50px; ">
 						<a id="Electronic-tab" onfocus="bk()" style="text-align:left;" data-toggle="tab" href="#Electronic" role="tab" aria-controls="Electronic" aria-selected="false">Electronics</a>
-					</li>
-					
+					</li> -->
+
 				</ul>
 			</div>
 			<section id="grade-div" style="display: block;">
 				<div class="row mb-2 ml-2">
 					<ul class="nav nav-tabs  product-categoryy d-flex " id="myTab2" role="tablist2">
-
 						<li class="text-dark nav-item active" style="font-size: 13px;">
-							<a id="Gd1-tab" class="btn-sm gg active" data-toggle="tab" href="#Gd1" role="tab" aria-controls="Gd1" aria-selected="false">G-1</a>
+							<a id="All-tab" class="btn-sm gg active" data-toggle="tab" href="#All" role="tab" aria-controls="All" aria-selected="false">All</a>
+						</li>
+						<li class="text-dark nav-item" style="font-size: 13px;">
+							<a id="Gd1-tab" class="btn-sm gg" data-toggle="tab" href="#Gd1" role="tab" aria-controls="Gd1" aria-selected="false">G-1</a>
 						</li>
 						<li class="text-dark nav-item " style="font-size: 13px;">
 							<a id="Gd2-tab" class="btn-sm gg" data-toggle="tab" href="#Gd2" role="tab" aria-controls="Gd2" aria-selected="false">G-2</a>
@@ -165,11 +167,15 @@
 							<a id="Gd10-tab" class="btn-sm gg" data-toggle="tab" href="#Gd10" role="tab" aria-controls="Gd10" aria-selected="false">G-10</a>
 						</li>
 						<li class="text-dark nav-item " style="font-size: 13px;">
-							<a id="Gd11-tab" class="btn-sm gg" data-toggle="tab" href="#Gd11" role="tab" aria-controls="Gd11" aria-selected="false">G-11</a>
+							<a id="Gd11-tab" class="btn-sm gg" data-toggle="tab" href="#Gd11" role="tab" aria-controls="Gd11" aria-selected="false">O/L</a>
 						</li>
-						<!-- <li class="text-dark nav-item active" style="font-size: 13px;">
-							<a class="btn-sm gg active" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="Book" aria-selected="true">All</a>
-						</li> -->
+						<li class="text-dark nav-item " style="font-size: 13px;">
+							<a id="Gd12-tab" class="btn-sm gg" data-toggle="tab" href="#Gd12" role="tab" aria-controls="Gd12" aria-selected="false">A/L</a>
+						</li>
+						<li class="text-dark nav-item " style="font-size: 13px;">
+							<a id="Other-tab" class="btn-sm gg" data-toggle="tab" href="#Other" role="tab" aria-controls="Other" aria-selected="false">Other</a>
+						</li>
+						
 					</ul>
 				</div>
 			</section>
@@ -178,11 +184,11 @@
 
 			<div class="tab-content" id="myTabContent">
 
-				<!-- <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+				<div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php //$this->load->view('template/card/book');  ?>
+						<?php $this->load->view('template/card/book');  ?>
 					</div>
-				</div> -->
+				</div>
 				<div class="tab-pane fade show active" id="Gd1" role="tabpanel" aria-labelledby="Gd1-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
 						<?php $this->load->view('template/card/book1');  ?>
@@ -238,30 +244,44 @@
 						<?php $this->load->view('template/card/book11');  ?>
 					</div>
 				</div>
-
-				<!-- ////////////////////////////////////// -->
-				<div class="tab-pane fade" id="Electronic" role="tabpanel" aria-labelledby="Electronic-tab">
+				<div class="tab-pane fade" id="Gd12" role="tabpanel" aria-labelledby="Gd12-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php $this->load->view('template/card/electronic');  ?>
+						<?php $this->load->view('template/card/book12');  ?>
 					</div>
 				</div>
-				
-				<div class="tab-pane fade" id="Textile" role="tabpanel" aria-labelledby="Textile-tab">
+				<div class="tab-pane fade" id="Other" role="tabpanel" aria-labelledby="Other-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php //$this->load->view('template/card/textile');  ?>
+						<?php $this->load->view('template/card/bookother');  ?>
+					</div>
+				</div>
+
+				<!-- ////////////////////////////////////// -->
+				<!-- <div class="tab-pane fade" id="Electronic" role="tabpanel" aria-labelledby="Electronic-tab">
+					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
+						<?php //$this->load->view('template/card/electronic');  
+						?>
 					</div>
 				</div> -->
+
+				<!-- <div class="tab-pane fade" id="Textile" role="tabpanel" aria-labelledby="Textile-tab">
+					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
+						<?php //$this->load->view('template/card/textile');  
+						?>
+					</div>
+				</div>  -->
 				<!-- <div class="tab-pane fade" id="Grocery" role="tabpanel" aria-labelledby="Grocery-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php //$this->load->view('template/card/grocery');  ?>
+						<?php //$this->load->view('template/card/grocery');  
+						?>
 					</div>
 				</div> -->
 				<!-- <div class="tab-pane fade" id="Food" role="tabpanel" aria-labelledby="Food-tab">
 					<div class="row col-xs-12" id="Fruits" style="font-size:14px;">
-						<?php //$this->load->view('template/card/food');  ?>
+						<?php //$this->load->view('template/card/food');  
+						?>
 					</div>
 				</div> -->
-				
+
 			</div>
 
 

@@ -34,13 +34,13 @@ foreach ($book as $item) {  ?>
         <div class="modal fade" id="bookk<?php echo $item['Item_ID']; ?>" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle"><?php echo $item['Item_Name']; ?></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-header" style="background-image: linear-gradient(135deg, #C33764 10%, #1D2671 100%);">
+                        <h6 class="modal-title text-light" id="exampleModalLongTitle"><?php echo $item['Item_Name']; ?></h6>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body text-dark">
                         <img style="width: 250px;" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Contact Asluf for more details"><br />
                         🔸Price : <?php echo $item['Price']; ?> <br />
                         🔸Pages : <?php echo $item['BPages']; ?><br />

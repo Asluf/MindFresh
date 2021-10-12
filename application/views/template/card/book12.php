@@ -1,12 +1,12 @@
 
 <?php
 // var_dump($book);
-foreach ($book as $item) { 
-    if($item['Grade'] == '2'){ ?>
+foreach ($book as $item) {
+    if($item['Grade'] == '12'){  ?>
 
     <div class="col-xs-6 product col-md-6  col-lg-3 " style="width: 49%;">
         <div class="">
-            <a class="img-prod" data-toggle="modal" data-target="#book2<?php echo $item['Item_ID']; ?>">
+            <a class="img-prod" data-toggle="modal" data-target="#book12<?php echo $item['Item_ID']; ?>">
                 <img style="width: 150px; height:200px" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Contact Asluf for more details">
             </a>
 
@@ -33,7 +33,7 @@ foreach ($book as $item) {
         </div>
     </div>
     <div>
-        <div class="modal fade" id="book2<?php echo $item['Item_ID']; ?>" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade" id="book12<?php echo $item['Item_ID']; ?>" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header" style="background-image: linear-gradient(135deg, #C33764 10%, #1D2671 100%);">

@@ -44,7 +44,7 @@ class customer_model extends CI_MODEL
         }
     }
     public function getbook()
-    {
+    {   $this->db->order_by('Item_ID', 'DESC');
         $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Category_Name' => 'Book'));
         return $query->result_array();
     }
