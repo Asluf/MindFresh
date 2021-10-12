@@ -48,61 +48,7 @@ class customer_model extends CI_MODEL
         $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Category_Name' => 'Book'));
         return $query->result_array();
     }
-    public function book1()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '1'));
-        return $query->result_array();
-    }
-    public function book2()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '2'));
-        return $query->result_array();
-    }
-    public function book3()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '3'));
-        return $query->result_array();
-    }
-    public function book4()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '4'));
-        return $query->result_array();
-    }
-    public function book5()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '5'));
-        return $query->result_array();
-    }
-    public function book6()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '6'));
-        return $query->result_array();
-    }
-    public function book7()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '7'));
-        return $query->result_array();
-    }
-    public function book8()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '8'));
-        return $query->result_array();
-    }
-    public function book9()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '9'));
-        return $query->result_array();
-    }
-    public function book10()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '10'));
-        return $query->result_array();
-    }
-    public function book11()
-    {
-        $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Grade' => '11'));
-        return $query->result_array();
-    }
+    
     
     // public function gettextile()
     // {

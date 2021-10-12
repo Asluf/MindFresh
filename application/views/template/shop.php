@@ -99,7 +99,7 @@
 	<div style="text-align:center;">
 		<div class="heading-section-bold  mt-md-3">
 			<div class="ml-md-0">
-				<h1 class="text-dark mt-2" style="font-size:15px;"><b>- Products -</b></h1>
+				<h1 class="text-dark mt-2" style="font-size:15px;"><b>- Books -</b></h1>
 			</div>
 		</div>
 	</div>
