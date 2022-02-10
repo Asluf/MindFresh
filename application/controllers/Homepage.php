@@ -11,6 +11,13 @@ class Homepage extends CI_Controller
 		$data['book'] = $this->customer_model->getbook();		
 		$this->load->view('template/shop', $data);
 	}
+	public function more($id)
+	{
+
+		$this->load->model('customer_model');
+		$data['part'] = $this->customer_model->getmore($id);		
+		$this->load->view('template/moredetails', $data);
+	}
 	
 	public function about()
 	{

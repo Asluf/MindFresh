@@ -48,6 +48,12 @@ class customer_model extends CI_MODEL
         $query = $this->db->get_where('admin_book', array('Item_Status' => 'In_Stock', 'Category_Name' => 'Book'));
         return $query->result_array();
     }
+    public function getmore($id)
+    {   
+        // $this->db->order_by('Item_ID', 'DESC');
+        $query = $this->db->get_where('admin_book', array('Item_ID' => $id,'Item_Status' => 'In_Stock', 'Category_Name' => 'Book'));
+        return $query->result_array();
+    }
     
     
     // public function gettextile()

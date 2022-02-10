@@ -2,9 +2,9 @@
 // var_dump($book);
 foreach ($book as $item) {  ?>
 
-    <div class="col-xs-6 product col-md-6  col-lg-3 " style="width: 49%;">
+    <div class="col-xs-6 product col-md-6  col-lg-3 border-0" style="width: 49%;">
         <div class="">
-            <a class="img-prod" data-toggle="modal" data-target="#bookk<?php echo $item['Item_ID']; ?>">
+            <a class="img-prod" href="<?php echo base_url(); ?>index.php/Homepage/more/<?php echo $item['Item_ID'];?>" data-target="#bookk<?php echo $item['Item_ID']; ?>">
                 <img style="width: 150px; height:200px" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Contact Asluf for more details">
             </a>
 
@@ -30,37 +30,7 @@ foreach ($book as $item) {  ?>
             </div>
         </div>
     </div>
-    <div>
-        <div class="modal fade" id="bookk<?php echo $item['Item_ID']; ?>" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header" style="background-image: linear-gradient(135deg, #C33764 10%, #1D2671 100%);">
-                        <h6 class="modal-title text-light" id="exampleModalLongTitle"><?php echo $item['Item_Name']; ?></h6>
-                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-dark">
-                        <img style="width: 250px;" src="<?php echo base_url(); ?>resources/book_pics/<?php echo $item['Item_Image_Path']; ?>" alt="Contact Asluf for more details"><br />
-                        🔸Price : <?php echo $item['Price']; ?> <br />
-                        🔸Pages : <?php echo $item['BPages']; ?><br />
-                        🔸ISBN : <?php echo $item['ISBN']; ?><br />
-                        🔸Publication : <?php echo $item['BPublication']; ?><br />
-                        🔸Author : <?php echo $item['Book_Author']; ?><br />
-                        🔸More Details : <?php echo $item['BMore']; ?>
-
-                    </div>
-                    <div class="modal-footer">
-                        <a id="<?php echo $item['Item_ID']; ?>" style="display: block;" href="https://api.whatsapp.com/send?phone=+94767520348&text=I want to purchase <?php echo $item['Item_Name']; ?>" name=" <?php echo $item['Item_ID']; ?>" class="btn btn-success btn-lg heart d-flex justify-content-center align-items-center ">
-                            <span class="icon-whatsapp">
-                        </a>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 
 <?php } ?>
